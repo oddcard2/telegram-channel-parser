@@ -17,6 +17,6 @@ You can use get-dialogs method to get all channels id:
 
 Or use parse-channel to get .csv file with all messages from it
 
-`python main.py parse-channel --output-file=some_channel_messages.csv -- -1001754702845`
+`python main.py parse-channel --output-file=some_channel_messages.csv 1001754702845`
 
-where -1001754702845 is some channel_id 
+where 1001754702845 is some channel_id 
