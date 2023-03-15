@@ -20,6 +20,7 @@ async def _iter_channel_messages(channel_id, output_file):
             if number_of_words > 2:
                 message_dicts.append({"id": message.id,
                                       "message": message.message,
+                                      "forward": message.forward,
                                       "date": message.date,
                                       "media": message.media.__class__})
     pd.DataFrame(message_dicts).set_index("id").to_csv(output_file)
